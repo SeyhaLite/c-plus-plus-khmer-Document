@@ -323,7 +323,11 @@
       "status": "verified",
       "reviewed": true,
       "sources": [
-        "https://en.cppreference.com/w/cpp/language/function"
+        "https://en.cppreference.com/w/cpp/language/function",
+        "https://en.cppreference.com/w/cpp/language/overload_resolution",
+        "https://en.cppreference.com/w/cpp/language/member_functions",
+        "https://eel.is/c++draft/dcl.fct",
+        "https://isocpp.org/STD/STATUS"
       ],
       "updated_at": "2026-11-13"
     },
