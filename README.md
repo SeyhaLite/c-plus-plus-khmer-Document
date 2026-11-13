@@ -92,7 +92,7 @@ source .venv/bin/activate
 នៅលើ Windows អាចប្រើ៖
 
 ```powershell
-.venv\\Scripts\\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 ### 3. ដំឡើង Packages
