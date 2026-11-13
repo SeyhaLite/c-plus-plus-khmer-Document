@@ -1,0 +1,641 @@
+{
+  "generated_at": "2026-11-13 10:55 UTC",
+  "compiler": "g++",
+  "total": 70,
+  "compiled": 70,
+  "ran": 70,
+  "passed": 70,
+  "failed": [],
+  "examples": [
+    {
+      "file": "examples/advanced/concepts.cpp",
+      "std": "c++20",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "twice: 42\nint-like: 7\nfloat-like: 2.5\nstatic asserts passed"
+    },
+    {
+      "file": "examples/advanced/concurrency.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "worker done\nworker done\nworker done\nworker done\ncounter: 4000"
+    },
+    {
+      "file": "examples/advanced/coroutines.cpp",
+      "std": "c++20",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "1\n2\n3\ndone"
+    },
+    {
+      "file": "examples/advanced/dynamic-allocation.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "single: 42\nsum: 6\nzeroed: 0"
+    },
+    {
+      "file": "examples/advanced/exceptions.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "parsed: 5\ncaught base: yes"
+    },
+    {
+      "file": "examples/advanced/memory-management.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "id: 1\nid: 2\nlocal: 5\nheap: 7"
+    },
+    {
+      "file": "examples/advanced/move-semantics.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "copy a\nmove a\na name: (moved)\nc name: a\nmove x\nsize: 1"
+    },
+    {
+      "file": "examples/advanced/multithreading.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "thread id valid: yes\ntotal: 499500\njoinable after join: no"
+    },
+    {
+      "file": "examples/advanced/pointers.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "value: 41\nafter: 42\nsecond: 20\nnullptr check: yes"
+    },
+    {
+      "file": "examples/advanced/raii.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "allocate 4\nvalue: 42\nrelease 4\ndone"
+    },
+    {
+      "file": "examples/advanced/references.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "number: 15\nscaled: 30\ntext: hello\nvalues: 246"
+    },
+    {
+      "file": "examples/advanced/smart-pointers.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "acquire unique\nunique_ptr ready\nusing unique\nrelease unique\nfirst is null: yes\nacquire shared\ncount: 2\ncount after scope: 1\nrelease shared"
+    },
+    {
+      "file": "examples/advanced/templates.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "max int: 7\nmax double: 2.5\nmax string: pear\nbox: 42, hello"
+    },
+    {
+      "file": "examples/basics/comments.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "difference = 6"
+    },
+    {
+      "file": "examples/basics/constants.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "circle area = 78.5398\nmax attempts = 3"
+    },
+    {
+      "file": "examples/basics/data-types.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "sizeof(bool) = 1\nsizeof(char) = 1\nsizeof(int) = 4\nsizeof(double) = 8\nsizeof(long) = 8"
+    },
+    {
+      "file": "examples/basics/input-output.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "name: Sok\nage: 21\nnext year: 22\ncity: Phnom Penh\ncity: Siem Reap"
+    },
+    {
+      "file": "examples/basics/operators.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "a / b = 3\na % b = 1\na / b as double = 3.5\n-7 / 2 = -3\n-7 % 2 = -1\ntotal = 14\ncomparison: 1\nternary: 7\nlogical: 0"
+    },
+    {
+      "file": "examples/basics/syntax.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "area = 12"
+    },
+    {
+      "file": "examples/basics/type-conversion.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "integer division: 3\ndouble division: 3.5\ntruncated: 9\nbool from 42: 1"
+    },
+    {
+      "file": "examples/basics/variables.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "count = 3\ntotal = 25.5\nlabel = score"
+    },
+    {
+      "file": "examples/control-flow/do-while.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "accepted = 5\ni = 3"
+    },
+    {
+      "file": "examples/control-flow/for.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "sum = 15\nv=10\nv=20\nv=30\n1,1\n1,2\n2,1\n2,2"
+    },
+    {
+      "file": "examples/control-flow/if-else.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "grade: C\ncategory: adult"
+    },
+    {
+      "file": "examples/control-flow/jump-statements.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "i=0\ni=1\ni=3\nfirst negative index = 2"
+    },
+    {
+      "file": "examples/control-flow/switch.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "state 2: running\npriority: high"
+    },
+    {
+      "file": "examples/control-flow/while.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "digits = 3\nattempts = 3"
+    },
+    {
+      "file": "examples/functions/declaration.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "square(5) = 25"
+    },
+    {
+      "file": "examples/functions/definition.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "cube(3) = 27"
+    },
+    {
+      "file": "examples/functions/lambda.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "times(4) = 12\ntotal = 6\neven count = 1"
+    },
+    {
+      "file": "examples/functions/overloading.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "int: 7\ndouble: 2.5\nstring: text"
+    },
+    {
+      "file": "examples/functions/parameters.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "after value: 1\nafter reference: 99\nhello from const reference"
+    },
+    {
+      "file": "examples/functions/recursion.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "5! = 120\n10! = 3628800\nfib(10) = 55"
+    },
+    {
+      "file": "examples/functions/return-types.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "add = 5\nlo = 4, hi = 9\nimportant = 42"
+    },
+    {
+      "file": "examples/getting-started/compile-and-run.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "compile-time: 5\nruntime: 9"
+    },
+    {
+      "file": "examples/getting-started/compilers.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "compiler family: GCC\nstandard: 201703"
+    },
+    {
+      "file": "examples/getting-started/first-program.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Hello, world!"
+    },
+    {
+      "file": "examples/getting-started/history.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "__cplusplus = 201703\nstructured bindings and if constexpr are available"
+    },
+    {
+      "file": "examples/getting-started/install-compiler.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "standard macro: 201703\nC++17 or newer: ok"
+    },
+    {
+      "file": "examples/getting-started/what-is-cpp.cpp",
+      "std": "c++11",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Known standards: C++98 C++11 C++17 C++20\nCount: 4"
+    },
+    {
+      "file": "examples/oop/abstraction.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "[console] started\n[file] started"
+    },
+    {
+      "file": "examples/oop/classes.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "area = 20"
+    },
+    {
+      "file": "examples/oop/constructors.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "unknown (0)\nSok (21)\nDara (0)"
+    },
+    {
+      "file": "examples/oop/destructors.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "begin\nconstruct inner\ndestroy inner\nafter block\nconstruct outer\nend of main\ndestroy outer"
+    },
+    {
+      "file": "examples/oop/encapsulation.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "balance = 150\nrejected: invalid amount\nbalance = 150"
+    },
+    {
+      "file": "examples/oop/inheritance.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Animal(Rex)\nDog()\nRex eats\nRex barks\nname: Rex\n~Dog()\n~Animal(Rex)"
+    },
+    {
+      "file": "examples/oop/objects.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "a = 2\nb = 1\ncopy = 3\na after copy = 2"
+    },
+    {
+      "file": "examples/oop/polymorphism.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "square: 9\ncircle: 3.14159"
+    },
+    {
+      "file": "examples/oop/virtual-functions.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "virtual: derived\nnon-virtual: base-static\nsliced: base"
+    },
+    {
+      "file": "examples/practice/challenges.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "max: 9"
+    },
+    {
+      "file": "examples/practice/exercises.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "n: 5\nsum: 15"
+    },
+    {
+      "file": "examples/practice/quizzes.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "score: 3/5\npercent: 60%"
+    },
+    {
+      "file": "examples/practice/real-world.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Alice\n30\nEngineer"
+    },
+    {
+      "file": "examples/practice/solutions.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "n: 10\nsum: 55"
+    },
+    {
+      "file": "examples/reference/headers.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "sorted: 1 2 3\nsum: 6\nfilesystem header ok"
+    },
+    {
+      "file": "examples/reference/keywords.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "value: 25\ndoubled: 50\ntripled: 75\nis int: 1\nstatic_assert passed"
+    },
+    {
+      "file": "examples/reference/language-features.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "sum: 6 square(4): 16\nstructured binding ok\noptional: 7\nconstexpr: 25"
+    },
+    {
+      "file": "examples/reference/library-functions.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "max(3,7): 7\nmin(3,7): 3\nclamp(10,0,5): 5\nswapped: 2 1\nto_string: 42\nsize: 5"
+    },
+    {
+      "file": "examples/reference/operators.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "a+b: 7\na/b: 2 a%b: 1\na>b && b>0: 1\na&b: 0 a<<1: 10\nmax: 5\nsizeof(int): 4"
+    },
+    {
+      "file": "examples/reference/preprocessor.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "PI: 3.14159\nSQUARE(4): 16\ndebug on\ncpp standard: 201703"
+    },
+    {
+      "file": "examples/stdlib/algorithms.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "1 2 5 8 9\nfound 8: yes\nsum: 50\ngt10 count: 2"
+    },
+    {
+      "file": "examples/stdlib/chrono.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "elapsed ms >= 10: yes\ntotal seconds: 62"
+    },
+    {
+      "file": "examples/stdlib/containers.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "size: 4\nfront: 10 back: 40\nAlice: 30\nBob: 25\ncount Alice: 1"
+    },
+    {
+      "file": "examples/stdlib/filesystem.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "filename: c.txt\nextension: .txt\nparent: a/b\ntemp exists: yes\nis dir: yes"
+    },
+    {
+      "file": "examples/stdlib/input-output.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Hello, world\nparsed: 42\nvalue=42"
+    },
+    {
+      "file": "examples/stdlib/iterators.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "1 2 3 4\n4 3 2 1\nfound: 3 at offset 2\ndistance begin-end: 4"
+    },
+    {
+      "file": "examples/stdlib/numeric.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "sum: 10\niota: 10 11 12 13\ngcd(12,18): 6\nlcm(4,6): 12"
+    },
+    {
+      "file": "examples/stdlib/ranges.cpp",
+      "std": "c++20",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "2 4 6\n2 4 6\ncount even: 3"
+    },
+    {
+      "file": "examples/stdlib/strings.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "Hello World (size 11)\nsubstr: World\nview: Hello World\nfind 'World': 6\nempty? no"
+    },
+    {
+      "file": "examples/stdlib/utilities.cpp",
+      "std": "c++17",
+      "compiled": true,
+      "ran": true,
+      "passed": true,
+      "error": "",
+      "output": "1 one\nbound: 1 one\noptional: 42\nempty has value: no\nvariant holds string: 1"
+    }
+  ]
+}

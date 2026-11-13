@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Compiled gettext catalogues
+*.mo
+
+# Sphinx build output
+docs/_build/
+docs/.doctrees/
+
+# Translation pipeline cache (downloaded source text is never committed:
+# we store only URLs and metadata in data/, per source licensing rules)
+data/.cache/
+
+# Local preview server log and pid
+serve.log
+serve.pid
+
+# Local macOS/editor noise
+.DS_Store
+.idea/
+.vscode/

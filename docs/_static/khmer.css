@@ -1,0 +1,217 @@
+/* Khmer-friendly typography and translation UI for the Furo theme. */
+
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --kc-ok: #107c43;
+  --kc-ok-bg: #107c4314;
+  --kc-info: #1d5fbf;
+  --kc-info-bg: #1d5fbf14;
+  --kc-warn: #a3560a;
+  --kc-warn-bg: #a3560a14;
+  --kc-bad: #b3261e;
+  --kc-bad-bg: #b3261e14;
+}
+
+html[data-theme="dark"] {
+  --kc-ok: #79e3a8;
+  --kc-info: #8fbcf7;
+  --kc-warn: #f0b768;
+  --kc-bad: #ff8f88;
+}
+
+/* Khmer needs a little more vertical room than Latin text. */
+body {
+  line-height: 1.8;
+}
+
+p,
+li,
+dd,
+dt,
+td,
+th,
+figcaption {
+  line-height: 1.8;
+}
+
+article h1,
+article h2,
+article h3,
+article h4 {
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+/* Inline code must never be affected by Khmer shaping. */
+code.literal,
+code {
+  font-family: var(--font-stack--monospace);
+  font-size: 0.92em;
+}
+
+/* Translation metadata block at the top of every documentation page. */
+.kc-meta {
+  border-left: 3px solid var(--color-brand-primary);
+  background: var(--color-background-secondary);
+  border-radius: 0 6px 6px 0;
+  padding: 0.55rem 0.9rem 0.35rem;
+  margin: 0 0 1.8rem;
+  font-size: 0.86rem;
+}
+
+.kc-meta p {
+  margin: 0.3rem 0;
+}
+
+.kc-badge {
+  display: inline-block;
+  font-size: 0.76rem;
+  line-height: 1.6;
+  padding: 0.1rem 0.55rem;
+  margin: 0 0.35rem 0.25rem 0;
+  border-radius: 999px;
+  border: 1px solid var(--color-foreground-border);
+  color: var(--color-foreground-secondary);
+  white-space: nowrap;
+}
+
+.kc-badge--verified {
+  color: var(--kc-ok);
+  border-color: currentColor;
+  background: var(--kc-ok-bg);
+}
+
+.kc-badge--translated {
+  color: var(--kc-info);
+  border-color: currentColor;
+  background: var(--kc-info-bg);
+}
+
+.kc-badge--progress {
+  color: var(--kc-warn);
+  border-color: currentColor;
+  background: var(--kc-warn-bg);
+}
+
+.kc-badge--pending,
+.kc-badge--std {
+  color: var(--color-foreground-secondary);
+}
+
+.kc-badge--failed,
+.kc-badge--review {
+  color: var(--kc-bad);
+  border-color: currentColor;
+  background: var(--kc-bad-bg);
+}
+
+/* Breadcrumbs injected by translation-ui.js (Furo has none built in). */
+.kc-breadcrumbs {
+  font-size: 0.82rem;
+  color: var(--color-foreground-secondary);
+  margin: 0 0 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.kc-breadcrumbs a {
+  color: var(--color-brand-content);
+  text-decoration: none;
+}
+
+.kc-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.kc-breadcrumbs__sep {
+  opacity: 0.55;
+  padding: 0 0.25rem;
+}
+
+/* C++ standard selector. */
+.kc-std-selector {
+  margin: 0.2rem 0 1.1rem;
+}
+
+.kc-std-selector label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-foreground-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.kc-std-selector select {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-foreground-border);
+  background: var(--color-background-primary);
+  color: var(--color-foreground-primary);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.kc-std-note {
+  font-size: 0.72rem;
+  color: var(--color-foreground-secondary);
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+/* Status dots in the sidebar navigation. */
+.kc-dot {
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  flex: none;
+}
+
+.kc-dot--verified { background: var(--kc-ok); }
+.kc-dot--translated { background: var(--kc-info); }
+.kc-dot--in_progress { background: var(--kc-warn); }
+.kc-dot--pending { background: #9aa0a6; }
+.kc-dot--failed { background: var(--kc-bad); }
+
+.kc-hidden-by-standard {
+  display: none !important;
+}
+
+/* Dashboard tables must stay usable on phones. */
+.kc-dashboard table,
+.kc-track-pages table,
+article table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  white-space: normal;
+}
+
+.kc-dashboard th,
+.kc-dashboard td {
+  white-space: normal;
+  vertical-align: top;
+}
+
+/* Slightly tighter code blocks so pages stay short. */
+.highlight pre {
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  body {
+    line-height: 1.75;
+  }
+
+  .kc-meta {
+    font-size: 0.82rem;
+  }
+}

@@ -1,0 +1,57 @@
+# Khmer translations for the Sphinx and Furo user interface strings.
+#
+# Neither Sphinx nor Furo ships a Khmer catalogue, so their chrome (search box,
+# navigation buttons, theme toggle) fell back to English. Sphinx merges
+# locale_dirs catalogues on top of its own, so this file localises the visible
+# interface without patching the theme.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: khmer-cpp-docs 0.3\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Search"
+msgstr "ស្វែងរក"
+
+msgid "Search Results"
+msgstr "លទ្ធផលស្វែងរក"
+
+msgid "Index"
+msgstr "លិបិក្រម"
+
+msgid "Home"
+msgstr "ទំព័រដើម"
+
+msgid "Next"
+msgstr "បន្ទាប់"
+
+msgid "Previous"
+msgstr "មុន"
+
+msgid "On this page"
+msgstr "នៅលើទំព័រនេះ"
+
+msgid "Back to top"
+msgstr "ត្រឡប់ទៅខាងលើ"
+
+msgid "Skip to content"
+msgstr "រំលងទៅខ្លឹមសារ"
+
+msgid "Toggle site navigation sidebar"
+msgstr "បើក ឬបិទរបាររុករកគេហទំព័រ"
+
+msgid "Toggle table of contents sidebar"
+msgstr "បើក ឬបិទមាតិកា"
+
+msgid "Toggle Light / Dark / Auto color theme"
+msgstr "ប្ដូររចនាពណ៌ ភ្លឺ / ងងឹត / ស្វ័យប្រវត្តិ"
+
+msgid "Please activate JavaScript to enable the search functionality."
+msgstr "សូមបើក JavaScript ដើម្បីប្រើមុខងារស្វែងរក។"
+
+msgid "Last updated on %(last_updated)s."
+msgstr "ធ្វើបច្ចុប្បន្នភាពចុងក្រោយ %(last_updated)s។"

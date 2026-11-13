@@ -1,0 +1,939 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name_km": "ឯកសារ C++ ជាភាសាខ្មែរ",
+    "name_en": "Khmer C++ Documentation",
+    "license": "CC-BY-SA-3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "phase": "phase-3-core-language",
+    "standards": [
+      "cpp98",
+      "cpp11",
+      "cpp14",
+      "cpp17",
+      "cpp20",
+      "cpp23",
+      "cpp26"
+    ]
+  },
+  "tracks": [
+    {
+      "id": "getting-started",
+      "title_km": "ចាប់ផ្ដើម",
+      "title_en": "Getting Started",
+      "doc": "getting-started/index"
+    },
+    {
+      "id": "basics",
+      "title_km": "C++ មូលដ្ឋាន",
+      "title_en": "Basic C++",
+      "doc": "basics/index"
+    },
+    {
+      "id": "control-flow",
+      "title_km": "លំហូរបញ្ជា",
+      "title_en": "Control Flow",
+      "doc": "control-flow/index"
+    },
+    {
+      "id": "functions",
+      "title_km": "អនុគមន៍",
+      "title_en": "Functions",
+      "doc": "functions/index"
+    },
+    {
+      "id": "oop",
+      "title_km": "កម្មវិធីនិយមវត្ថុ",
+      "title_en": "Object-Oriented Programming",
+      "doc": "oop/index"
+    },
+    {
+      "id": "advanced",
+      "title_km": "C++ កម្រិតខ្ពស់",
+      "title_en": "Advanced C++",
+      "doc": "advanced/index"
+    },
+    {
+      "id": "stdlib",
+      "title_km": "បណ្ណាល័យស្តង់ដារ",
+      "title_en": "Standard Library",
+      "doc": "stdlib/index"
+    },
+    {
+      "id": "reference",
+      "title_km": "ឯកសារយោង C++",
+      "title_en": "C++ Reference",
+      "doc": "reference/index"
+    },
+    {
+      "id": "practice",
+      "title_km": "អនុវត្ត",
+      "title_en": "Practice",
+      "doc": "practice/index"
+    }
+  ],
+  "pages": [
+    {
+      "id": "getting-started/what-is-cpp",
+      "title_km": "C++ ជាអ្វី?",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/basic_concepts",
+        "https://isocpp.org/get-started",
+        "https://isocpp.org/std/the-standard"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "getting-started/history",
+      "title_km": "ប្រវត្តិ និងស្តង់ដារ C++",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/history",
+        "https://isocpp.org/std/the-standard",
+        "https://www.open-std.org/jtc1/sc22/wg21/"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "getting-started/install-compiler",
+      "title_km": "ការដំឡើងកម្មវិធីបកប្រែ C++",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://isocpp.org/get-started",
+        "https://gcc.gnu.org/install/"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "getting-started/compilers",
+      "title_km": "GCC, Clang និង MSVC",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://gcc.gnu.org/",
+        "https://clang.llvm.org/",
+        "https://learn.microsoft.com/en-us/cpp/build/vscpp-step-0-installation",
+        "https://isocpp.org/get-started"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "getting-started/first-program",
+      "title_km": "កម្មវិធី C++ ដំបូង",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/io/cout",
+        "https://en.cppreference.com/w/cpp/language/main_function"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "getting-started/compile-and-run",
+      "title_km": "ការបកប្រែ និងការប្រតិបត្តិកម្មវិធី",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/translation_phases",
+        "https://en.cppreference.com/w/cpp/language/main_function"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/syntax",
+      "title_km": "វាក្យសម្ព័ន្ធ (Syntax)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/basic_concepts",
+        "https://en.cppreference.com/w/cpp/language/declarations"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/variables",
+      "title_km": "អថេរ (Variables)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/declarations",
+        "https://en.cppreference.com/w/cpp/language/initialization"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/data-types",
+      "title_km": "ប្រភេទទិន្នន័យ (Data Types)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/types",
+        "https://en.cppreference.com/w/cpp/header/cstdint"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/constants",
+      "title_km": "ថេរ និង constexpr",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/cv",
+        "https://en.cppreference.com/w/cpp/language/constexpr",
+        "https://en.cppreference.com/w/cpp/language/constant_expression"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/operators",
+      "title_km": "ប្រមាណវិធី (Operators)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/operators",
+        "https://en.cppreference.com/w/cpp/language/operator_precedence"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/input-output",
+      "title_km": "ការបញ្ចូល និងការបញ្ចេញ (I/O)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/io",
+        "https://en.cppreference.com/w/cpp/io/cout",
+        "https://en.cppreference.com/w/cpp/io/cin"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/comments",
+      "title_km": "មតិយោបល់ក្នុងកូដ (Comments)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/comment"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "basics/type-conversion",
+      "title_km": "ការបំប្លែងប្រភេទ (Type Conversion)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/implicit_conversion",
+        "https://en.cppreference.com/w/cpp/language/explicit_cast",
+        "https://en.cppreference.com/w/cpp/language/static_cast"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/if-else",
+      "title_km": "if និង else",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/if"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/switch",
+      "title_km": "switch និង case",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/switch"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/for",
+      "title_km": "រង្វិលជុំ for",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/for",
+        "https://en.cppreference.com/w/cpp/language/range-for"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/while",
+      "title_km": "រង្វិលជុំ while",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/while"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/do-while",
+      "title_km": "រង្វិលជុំ do-while",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/do"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "control-flow/jump-statements",
+      "title_km": "break, continue និង goto",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/break",
+        "https://en.cppreference.com/w/cpp/language/continue",
+        "https://en.cppreference.com/w/cpp/language/goto"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/declaration",
+      "title_km": "ការប្រកាសអនុគមន៍ (Declaration)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/function"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/definition",
+      "title_km": "ការកំណត់អនុគមន៍ (Definition)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/function",
+        "https://en.cppreference.com/w/cpp/language/inline"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/parameters",
+      "title_km": "ប៉ារ៉ាម៉ែត្រ (Parameters)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/function",
+        "https://en.cppreference.com/w/cpp/language/default_arguments"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/return-types",
+      "title_km": "ប្រភេទតម្លៃត្រឡប់ (Return Types)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/function",
+        "https://en.cppreference.com/w/cpp/language/return"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/overloading",
+      "title_km": "ការផ្ទុកលើសអនុគមន៍ (Overloading)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/overload_resolution",
+        "https://en.cppreference.com/w/cpp/language/adl"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/recursion",
+      "title_km": "ការហៅខ្លួនឯង (Recursion)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/function",
+        "https://en.cppreference.com/w/cpp/language/ub"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "functions/lambda",
+      "title_km": "កន្សោម Lambda",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/lambda"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/classes",
+      "title_km": "ថ្នាក់ (Classes)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/classes",
+        "https://en.cppreference.com/w/cpp/language/class"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/objects",
+      "title_km": "វត្ថុ (Objects)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/object",
+        "https://en.cppreference.com/w/cpp/language/object#Object_representation_and_value_representation"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/constructors",
+      "title_km": "អ្នកសាងសង់ (Constructors)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/constructor",
+        "https://en.cppreference.com/w/cpp/language/default_constructor"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/destructors",
+      "title_km": "អ្នកបំផ្លាញ (Destructors)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/destructor"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/encapsulation",
+      "title_km": "ការខ្ចប់ទិន្នន័យ (Encapsulation)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/access",
+        "https://en.cppreference.com/w/cpp/language/friend"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/inheritance",
+      "title_km": "មរតក (Inheritance)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/derived_class",
+        "https://en.cppreference.com/w/cpp/language/access"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/polymorphism",
+      "title_km": "ពហុរូបភាព (Polymorphism)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/virtual",
+        "https://en.cppreference.com/w/cpp/language/override"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/abstraction",
+      "title_km": "អរូបីកម្ម (Abstraction)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/abstract_class",
+        "https://en.cppreference.com/w/cpp/language/virtual"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "oop/virtual-functions",
+      "title_km": "អនុគមន៍និម្មិត (Virtual Functions)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/virtual",
+        "https://en.cppreference.com/w/cpp/language/final"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/pointers",
+      "title_km": "ពោយន្ត័រ (Pointers)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/pointer",
+        "https://en.cppreference.com/w/cpp/language/nullptr"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/references",
+      "title_km": "យោង (References)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/reference"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/memory-management",
+      "title_km": "ការគ្រប់គ្រងអង្គចងចាំ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/storage_duration",
+        "https://en.cppreference.com/w/cpp/language/new",
+        "https://en.cppreference.com/w/cpp/language/delete"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/dynamic-allocation",
+      "title_km": "ការបែងចែកអង្គចងចាំឌីណាមិក",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/new",
+        "https://en.cppreference.com/w/cpp/language/delete"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/raii",
+      "title_km": "RAII",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/destructor",
+        "https://isocpp.org/wiki/faq/ctors"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/templates",
+      "title_km": "ពុម្ព (Templates)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/templates",
+        "https://en.cppreference.com/w/cpp/language/function_template"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/exceptions",
+      "title_km": "ករណីលើកលែង (Exceptions)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/exceptions",
+        "https://en.cppreference.com/w/cpp/language/try_catch",
+        "https://en.cppreference.com/w/cpp/language/noexcept_spec"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/move-semantics",
+      "title_km": "និយមន័យចលនា (Move Semantics)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/move_constructor",
+        "https://en.cppreference.com/w/cpp/utility/move"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/smart-pointers",
+      "title_km": "ពោយន្ត័រឆ្លាតវៃ (Smart Pointers)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/memory/unique_ptr",
+        "https://en.cppreference.com/w/cpp/memory/shared_ptr",
+        "https://en.cppreference.com/w/cpp/memory/weak_ptr"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/multithreading",
+      "title_km": "ការប្រើខ្សែស្រឡាយច្រើន",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/thread/thread",
+        "https://en.cppreference.com/w/cpp/thread/jthread"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/concurrency",
+      "title_km": "ការប្រតិបត្តិព្រមគ្នា (Concurrency)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/thread/mutex",
+        "https://en.cppreference.com/w/cpp/atomic/atomic",
+        "https://en.cppreference.com/w/cpp/atomic/memory_order"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/concepts",
+      "title_km": "គំនិត (Concepts)",
+      "since": "cpp20",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/constraints",
+        "https://en.cppreference.com/w/cpp/header/concepts"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/modules",
+      "title_km": "ម៉ូឌុល (Modules)",
+      "since": "cpp20",
+      "status": "translated",
+      "reviewed": false,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/modules"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "advanced/coroutines",
+      "title_km": "កូរូទីន (Coroutines)",
+      "since": "cpp20",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/coroutines",
+        "https://en.cppreference.com/w/cpp/header/coroutine"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/containers",
+      "title_km": "ធុងទិន្នន័យ (Containers)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/container",
+        "https://en.cppreference.com/w/cpp/container/vector",
+        "https://en.cppreference.com/w/cpp/container/map"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/algorithms",
+      "title_km": "អាល់ហ្គោរីត (Algorithms)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/algorithm",
+        "https://en.cppreference.com/w/cpp/algorithm/sort",
+        "https://en.cppreference.com/w/cpp/header/numeric"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/iterators",
+      "title_km": "អ្នកដើរកាត់ (Iterators)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/iterator",
+        "https://en.cppreference.com/w/cpp/iterator/begin"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/strings",
+      "title_km": "ខ្សែអក្សរ (std::string)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/string/basic_string",
+        "https://en.cppreference.com/w/cpp/string/basic_string_view"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/input-output",
+      "title_km": "បណ្ណាល័យបញ្ចូល/បញ្ចេញ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header/iostream",
+        "https://en.cppreference.com/w/cpp/header/sstream",
+        "https://en.cppreference.com/w/cpp/header/fstream"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/filesystem",
+      "title_km": "ប្រព័ន្ធឯកសារ (std::filesystem)",
+      "since": "cpp17",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header/filesystem",
+        "https://en.cppreference.com/w/cpp/filesystem/path"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/chrono",
+      "title_km": "ពេលវេលា (std::chrono)",
+      "since": "cpp11",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header/chrono",
+        "https://en.cppreference.com/w/cpp/chrono/duration"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/ranges",
+      "title_km": "ជួរ (std::ranges)",
+      "since": "cpp20",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/ranges",
+        "https://en.cppreference.com/w/cpp/header/ranges"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/utilities",
+      "title_km": "ឧបករណ៍ប្រើប្រាស់ (Utilities)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header/utility",
+        "https://en.cppreference.com/w/cpp/utility/optional",
+        "https://en.cppreference.com/w/cpp/utility/variant"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "stdlib/numeric",
+      "title_km": "ប្រតិបត្តិការលេខ (Numeric)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header/numeric",
+        "https://en.cppreference.com/w/cpp/algorithm/accumulate",
+        "https://en.cppreference.com/w/cpp/numeric/gcd"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/keywords",
+      "title_km": "ពាក្យគន្លឹះ (Keywords)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/keyword",
+        "https://en.cppreference.com/w/cpp/language/constexpr"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/operators",
+      "title_km": "តារាងប្រមាណវិធី",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/language/operator_precedence",
+        "https://en.cppreference.com/w/cpp/language/operators"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/preprocessor",
+      "title_km": "ព្រៃដំណើរការ (Preprocessor)",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/preprocessor",
+        "https://en.cppreference.com/w/cpp/preprocessor/replace",
+        "https://en.cppreference.com/w/cpp/preprocessor/conditional"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/headers",
+      "title_km": "ឯកសារក្បាលស្តង់ដារ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/header",
+        "https://en.cppreference.com/w/cpp/standard_library"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/library-functions",
+      "title_km": "អនុគមន៍បណ្ណាល័យស្តង់ដារ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/algorithm",
+        "https://en.cppreference.com/w/cpp/header/utility",
+        "https://en.cppreference.com/w/cpp/string/basic_string/to_string"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "reference/language-features",
+      "title_km": "លក្ខណៈពិសេសតាមស្តង់ដារ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/11",
+        "https://en.cppreference.com/w/cpp/14",
+        "https://en.cppreference.com/w/cpp/17"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "practice/exercises",
+      "title_km": "លំហាត់តាមជំពូក",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp",
+        "https://isocpp.org/faq"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "practice/challenges",
+      "title_km": "បញ្ហាសរសេរកូដ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/algorithm",
+        "https://isocpp.org/faq"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "practice/real-world",
+      "title_km": "គំរូកូដពិតប្រាកដ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/io",
+        "https://en.cppreference.com/w/cpp/string"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "practice/quizzes",
+      "title_km": "សំណួរសាកល្បង",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp",
+        "https://isocpp.org/faq"
+      ],
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "practice/solutions",
+      "title_km": "ដំណោះស្រាយ",
+      "since": "cpp98",
+      "status": "verified",
+      "reviewed": true,
+      "sources": [
+        "https://en.cppreference.com/w/cpp/algorithm",
+        "https://isocpp.org/faq"
+      ],
+      "updated_at": "2026-11-13"
+    }
+  ]
+}
