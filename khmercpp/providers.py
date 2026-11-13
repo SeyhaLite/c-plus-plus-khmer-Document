@@ -8,9 +8,9 @@ Two providers exist:
     worth more than a fast one.
 
 ``openai``
-    Any OpenAI-compatible ``/chat/completions`` endpoint, configured through
-    environment variables.  The API key is read from the environment and is
-    never written to the repository, printed, or included in a prompt.
+    The official OpenAI API is the default. A custom OpenAI-compatible endpoint
+    can be selected explicitly through environment variables. The API key is
+    sent to that endpoint, so only use a provider you trust.
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ import urllib.error
 import urllib.request
 from typing import Any
 
-DEFAULT_BASE_URL = "https://freebuff.com/api/v1/paid"
+DEFAULT_BASE_URL = "https://api.openai.com/v1"
 DEFAULT_MODEL = "gpt-5.1"
 
 
@@ -78,8 +78,10 @@ def _post(url: str, payload: dict[str, Any], api_key: str, timeout: int = 180) -
         with urllib.request.urlopen(request, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
-        detail = error.read().decode("utf-8", "replace")[:400]
-        raise TranslationError(f"API ត្រឡប់ HTTP {error.code}: {detail}") from error
+        # Do not echo arbitrary upstream response bodies into terminal/CI logs.
+        raise TranslationError(
+            f"API ត្រឡប់ HTTP {error.code}។ សូមពិនិត្យ endpoint និង API credentials។"
+        ) from error
     except urllib.error.URLError as error:
         raise TranslationError(f"មិនអាចភ្ជាប់ទៅ API: {error.reason}") from error
 

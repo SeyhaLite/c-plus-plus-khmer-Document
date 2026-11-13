@@ -89,11 +89,14 @@ python scripts/pipeline.py verify --page basics/my-topic --accept
 python scripts/pipeline.py validate --strict
 ```
 
-`translate --provider openai` will draft a page through any OpenAI-compatible
-endpoint using `KHMER_TRANSLATE_API_KEY` (or `OPENAI_API_KEY`) from the
-environment. **Keys are never stored in the repository.** Automated drafts are
-always written as `translated` but `unreviewed`; only `verify --accept` promotes a
-page to `verified`, and it refuses when any check fails.
+`translate --provider openai` uses the official OpenAI API
+(`https://api.openai.com/v1`) by default. Set `KHMER_TRANSLATE_BASE_URL` only
+when you intentionally choose a trusted OpenAI-compatible provider. The API key
+and source text are sent to that endpoint, so do not configure an untrusted
+proxy. The key is read from `KHMER_TRANSLATE_API_KEY` (or `OPENAI_API_KEY`) and
+is never stored in the repository. Automated drafts are always written as
+`translated` but `unreviewed`; only `verify --accept` promotes a page to
+`verified`, and it refuses when any check fails.
 
 The pipeline never overwrites an existing non-empty page (`--force` required),
 which is what makes resuming after an interruption safe.
