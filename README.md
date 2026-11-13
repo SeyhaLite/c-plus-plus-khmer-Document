@@ -153,7 +153,16 @@ Pipeline អាចប្រើ OpenAI API ដើម្បីបង្កើត�
 python scripts/pipeline.py translate --page basics/my-topic --provider openai
 ```
 
-កំណត់ API key តាម Environment Variable៖
+មុនបកប្រែទំព័រថ្មី ត្រូវបន្ថែមទំព័រ និងប្រភពយោងរបស់វាទៅក្នុង `data/inventory.json` ជាមុនសិន។ បន្ទាប់មកទាញយកអត្ថបទប្រភព និងបង្កើតសេចក្ដីព្រាង៖
+
+```bash
+python scripts/pipeline.py fetch --page basics/my-topic
+python scripts/pipeline.py translate --page basics/my-topic --provider openai
+```
+
+ពាក្យបញ្ជាខាងលើជាគំរូ។ ត្រូវប្រើ Page ID ដែលមានក្នុង Inventory ពិតប្រាកដ។ Pipeline មិនសរសេរជាន់លើឯកសារដែលមានអត្ថបទរួចទេ លុះត្រាតែប្រើជម្រើស `--force`។
+
+កំណត់ API key តាមអថេរបរិស្ថាន៖
 
 - `KHMER_TRANSLATE_API_KEY`
 - ឬ `OPENAI_API_KEY`
