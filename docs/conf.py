@@ -55,13 +55,6 @@ myst_heading_anchors = 3
 html_theme = "furo"
 html_title = "ឯកសារ C++ ជាភាសាខ្មែរ"
 html_short_title = "C++ ខ្មែរ"
-html_meta = {
-    "description": (
-        "ឯកសាររៀន និងឯកសារយោង C++ ជាភាសាខ្មែរ ពីមេរៀនមូលដ្ឋានដល់កម្រិតខ្ពស់ "
-        "រួមមានការពន្យល់ ឧទាហរណ៍កូដ និងប្រភពបច្ចេកទេសដែលអាចផ្ទៀងផ្ទាត់បាន។"
-    ),
-    "keywords": "C++, C++ Khmer, រៀន C++, ឯកសារ C++ ជាភាសាខ្មែរ",
-}
 html_static_path = ["_static"]
 html_css_files = ["khmer.css"]
 html_js_files = ["translation-ui.js"]
