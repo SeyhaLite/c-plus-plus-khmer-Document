@@ -1,8 +1,12 @@
 # ឯកសារ C++ ជាភាសាខ្មែរ
 
-គម្រោងនេះបង្កើតឯកសាររៀន និងឯកសារយោងសម្រាប់ភាសា **C++** ជាភាសាខ្មែរ។ ខ្លឹមសាររៀបចំពីមេរៀនមូលដ្ឋាន រហូតដល់ប្រធានបទកម្រិតខ្ពស់ ដោយមានការពន្យល់ ឧទាហរណ៍កូដ និងប្រភពសម្រាប់ស្វែងយល់បន្ថែម។
+**សេចក្ដីពិពណ៌នា៖** ឯកសាររៀន និងឯកសារយោង C++ ជាភាសាខ្មែរ ដែលរៀបចំពីមូលដ្ឋានដល់កម្រិតខ្ពស់។ មានការពន្យល់ជាភាសាខ្មែរងាយយល់ ឧទាហរណ៍កូដដែលអាចសាកល្បងបាន បញ្ជីពាក្យបច្ចេកទេស និងប្រភពយោងសម្រាប់សិក្សាបន្ថែម។
 
-គេហទំព័រប្រើ **Sphinx**, **MyST Markdown** និងរចនាប័ទ្ម **Furo** ហើយអាចបង្កើត និងបង្ហោះតាម **Read the Docs**។
+**គេហទំព័រផ្លូវការ៖** [ចូលអានឯកសារ C++ ជាភាសាខ្មែរ](https://c-plus-plus-khmer-document.readthedocs.io/)
+
+**មេរៀនឧទាហរណ៍៖** [if និង else](https://c-plus-plus-khmer-document.readthedocs.io/km/latest/control-flow/if-else.html)
+
+គម្រោងប្រើ **Sphinx**, **MyST Markdown** និងរចនាប័ទ្ម **Furo** ដើម្បីបង្កើតគេហទំព័រឯកសារ ហើយបង្ហោះតាម **Read the Docs**។
 
 ## គោលដៅរបស់គម្រោង
 
@@ -186,17 +190,14 @@ Endpoint លំនាំដើមគឺ `https://api.openai.com/v1`។ អាច
 
 ស្ថានភាព `verified` បញ្ជាក់ថាបានឆ្លងកាត់លក្ខខណ្ឌបច្ចេកទេសរបស់គម្រោង។ វាមិនមានន័យថាអ្នកជំនាញភាសាខ្មែរឯករាជ្យបានកែសម្រួល និងអនុម័តគ្រប់ប្រយោគរួចហើយទេ។
 
-## ការដាក់ឱ្យដំណើរការលើ Read the Docs
+## គេហទំព័រ Read the Docs
 
-Repository មានឯកសារ `.readthedocs.yaml` រួចហើយ។
+ឯកសារត្រូវបានបង្ហោះជាសាធារណៈនៅ៖
 
-1. ចូលទៅ [Read the Docs](https://readthedocs.org/)។
-2. ជ្រើសរើស **Import a Project**។
-3. ជ្រើស Repository `SeyhaLite/c-plus-plus-khmer-Document`។
-4. ពិនិត្យការកំណត់ Build ដែលអានពី `.readthedocs.yaml`។
-5. ចុច **Build version** ដើម្បីចាប់ផ្ដើមបង្កើតគេហទំព័រ។
+- [គេហទំព័រឯកសារផ្លូវការ](https://c-plus-plus-khmer-document.readthedocs.io/)
+- [មេរៀន if និង else](https://c-plus-plus-khmer-document.readthedocs.io/km/latest/control-flow/if-else.html)
 
-ការកំណត់បច្ចុប្បន្នប្រើ Ubuntu 24.04 និង Python 3.12 ដំឡើង Packages ពី `requirements.txt` ហើយប្រើ `docs/conf.py` ជា Sphinx configuration។ មុន Build វាដំណើរការ Content Validation និងតេស្តឧទាហរណ៍ C++។
+Read the Docs ប្រើផ្នែក `km/latest` សម្រាប់ឯកសារភាសាខ្មែរ និងកំណែ `latest`។ នៅពេល Push ការកែប្រែទៅសាខា `main` ប្រព័ន្ធ Build នឹងដំណើរការតាមការកំណត់ក្នុង `.readthedocs.yaml` និង GitHub Actions។
 
 ## GitHub Actions
 

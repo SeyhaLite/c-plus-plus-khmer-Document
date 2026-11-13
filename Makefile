@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 SPHINX  = $(PYTHON) -m sphinx
 
-.PHONY: help install html strict serve examples validate verify progress clean check
+.PHONY: help install html strict serve examples validate verify progress clean check html-links
 
 help:
 	@echo "make install   install dependencies into .venv"
@@ -11,7 +11,8 @@ help:
 	@echo "make examples  compile and run every C++ example"
 	@echo "make validate  run all content validators"
 	@echo "make verify    validate + examples + statistics snapshot"
-	@echo "make check     everything CI runs (strict build included)"
+	@echo "make check     everything CI runs (strict build + HTML link check)"
+	@echo "make html-links check generated HTML for duplicated .html suffixes"
 	@echo "make clean     remove build output"
 
 install:
@@ -40,10 +41,14 @@ verify:
 progress:
 	$(PYTHON) scripts/pipeline.py status --write
 
+html-links:
+	$(PYTHON) scripts/check_html_links.py docs/_build/html
+
 check:
 	$(PYTHON) scripts/pipeline.py validate --strict
 	$(PYTHON) scripts/check_examples.py --strict
 	$(SPHINX) -b html -W docs docs/_build/html
+	$(PYTHON) scripts/check_html_links.py docs/_build/html
 
 clean:
 	rm -rf docs/_build

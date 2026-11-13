@@ -147,7 +147,7 @@ class TranslationMeta(SphinxDirective):
         repo = (self.env.config.khmer_repo_url or "").rstrip("/")
         if repo:
             return f"{repo}/issues/new?title=Feedback%3A+{self.env.docname}"
-        return f"{uri}.html"
+        return uri
 
 
 class ProgressDashboard(SphinxDirective):
@@ -275,7 +275,7 @@ class TrackPages(SphinxDirective):
                     self.env.docname, page["id"]
                 )
                 title_entry += _paragraph(
-                    [nodes.reference("", page["title_km"], refuri=f"{uri}.html")]
+                    [nodes.reference("", page["title_km"], refuri=uri)]
                 )
             else:
                 suffix = "" if done else ""
